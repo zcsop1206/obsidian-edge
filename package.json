@@ -1,0 +1,20 @@
+{
+  "name": "obsidian-edge",
+  "private": true,
+  "description": "Obsidian plugin that gives a GUI to the edge metacognition folder: capture, triage, due drills, schema health, lens sweeps.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "test": "npm run build && npm run test:unit",
+    "test:unit": "tsc -p test -noEmit -skipLibCheck && node test/build.mjs && node --test test/out/unit.js"
+  },
+  "author": "Adit Bhargava",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "esbuild": "^0.28.2",
+    "obsidian": "^1.13.1",
+    "typescript": "^7.0.2"
+  }
+}

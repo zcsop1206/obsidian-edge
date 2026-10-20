@@ -1,0 +1,2 @@
+# The ops tests check line endings byte for byte (one fixture is CRLF on purpose).
+test/fixtures/** -text

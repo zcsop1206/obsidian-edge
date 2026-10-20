@@ -1,0 +1,9 @@
+{
+  "id": "edge",
+  "name": "Edge",
+  "version": "0.1.0",
+  "minAppVersion": "1.7.2",
+  "description": "A GUI for the edge metacognition folder: capture to the inbox, triage it, drill what is due, see schema health, run lens sweeps. Signals, schedules and counts only.",
+  "author": "Adit Bhargava",
+  "isDesktopOnly": false
+}

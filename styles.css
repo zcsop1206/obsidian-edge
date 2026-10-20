@@ -1,0 +1,188 @@
+/* Edge: one left edge, Obsidian's own type and colours. */
+
+.edge-view {
+  padding: 0 var(--size-4-3) var(--size-4-4);
+}
+
+.edge-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--size-4-2);
+  flex-wrap: wrap;
+  margin: var(--size-4-2) 0;
+}
+.edge-header h4 {
+  margin: 0;
+}
+.edge-hint,
+.edge-empty {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+.edge-error {
+  color: var(--text-error);
+}
+
+.edge-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4-2);
+}
+.edge-item {
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: var(--size-4-2);
+}
+.edge-item-head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--size-4-2);
+}
+.edge-item-text {
+  margin: var(--size-2-2) 0;
+  white-space: pre-wrap;
+}
+.edge-date {
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+}
+.edge-link {
+  cursor: pointer;
+  font-weight: var(--font-semibold);
+}
+
+.edge-tag-sign {
+  display: inline-block;
+  min-width: 1.4em;
+  text-align: center;
+  font-family: var(--font-monospace);
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-s);
+  background: var(--background-modifier-hover);
+}
+
+.edge-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2-2);
+  margin-top: var(--size-2-3);
+}
+.edge-actions button {
+  font-size: var(--font-ui-smaller);
+  padding: var(--size-2-1) var(--size-2-3);
+  height: auto;
+}
+.edge-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.edge-danger {
+  color: var(--text-error);
+}
+.edge-hidden {
+  display: none;
+}
+
+/* capture */
+.edge-tags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-2-2);
+  margin-bottom: var(--size-4-2);
+}
+.edge-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  height: auto;
+  padding: var(--size-2-3);
+}
+.edge-tag .edge-tag-sign {
+  font-size: var(--font-ui-large);
+  background: none;
+}
+.edge-tag .edge-tag-label {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+}
+.edge-tag.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.edge-tag.is-active .edge-tag-label {
+  color: var(--text-on-accent);
+}
+.edge-capture-row {
+  display: flex;
+  gap: var(--size-2-2);
+}
+.edge-capture-input {
+  flex: 1;
+}
+
+/* due */
+.edge-drill-prompt {
+  font-weight: var(--font-semibold);
+  margin-top: var(--size-2-2);
+}
+.edge-generalization,
+.edge-lens {
+  color: var(--text-normal);
+  margin: var(--size-2-2) 0;
+}
+.edge-generalization p,
+.edge-lens p {
+  margin: 0 0 var(--size-2-2);
+}
+.edge-status {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+/* health */
+.edge-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-ui-small);
+}
+.edge-table th,
+.edge-table td {
+  text-align: left;
+  padding: var(--size-2-1) var(--size-2-2);
+  border-bottom: 1px solid var(--background-modifier-border);
+  white-space: nowrap;
+}
+.edge-table .edge-num {
+  font-family: var(--font-monospace);
+  text-align: right;
+}
+.edge-row {
+  cursor: pointer;
+}
+.edge-row:hover {
+  background: var(--background-modifier-hover);
+}
+.edge-state {
+  font-family: var(--font-monospace);
+}
+.edge-state.edge-state-crisis {
+  color: var(--text-error);
+  font-weight: var(--font-bold);
+}
+.edge-state.edge-state-degenerating {
+  color: var(--text-warning);
+}
+.edge-state.edge-state-progressive {
+  color: var(--text-success);
+}
+
+/* sweep */
+.edge-sweep-project {
+  margin-bottom: var(--size-4-2);
+}
+.edge-answer {
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+}
